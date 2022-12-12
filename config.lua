@@ -17,43 +17,49 @@ Config.LicenseRank = 2
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
 Config.Locations = {
     ["duty"] = {
-        [1] = vector3(440.085, -974.924, 30.689),
-        [2] = vector3(-449.811, 6012.909, 31.815),
+        [1] = vector3(381.04, -1595.34, 30.05),
+        [2] = vector3(386.35, 794.55, 187.46),--park
     },
     ["vehicle"] = {
-        [1] = vector4(448.159, -1017.41, 28.562, 90.654),
-        [2] = vector4(471.13, -1024.05, 28.17, 274.5),
-        [3] = vector4(-455.39, 6002.02, 31.34, 87.93),
+        [1] = vector4(389.47, -1620.97, 29.29, 307.57),--new
+        [2] = vector4(475.43, -1020.35, 28.05, 270.19),
+        [3] = vector4(-476.4, 6031.95, 31.34, 224.38),-- paleto pd
+        [4] = vector4(-862.32, -1222.23, 6.07, 315.94),-- victory md
+        [5] = vector4(373.95, 790.56, 187.26, 163.43),--park
     },
     ["stash"] = {
-        [1] = vector3(453.075, -980.124, 30.889),
+        [1] = vector3(360.41, -1593.14, 25.45),--new
     },
     ["impound"] = {
-        [1] = vector3(436.68, -1007.42, 27.32),
-        [2] = vector3(-436.14, 5982.63, 31.34),
+        [1] = vector3(409.66, -1625.49, 29.29),--new
+        [2] = vector3(391.98, -1645.33, 29.29), --paleto PD
     },
     ["helicopter"] = {
-        [1] = vector4(449.168, -981.325, 43.691, 87.234),
-        [2] = vector4(-475.43, 5988.353, 31.716, 31.34),
+        [1] = vector4(363.34, -1599.09, 41.78, 139.54),--new
+        [2] = vector4(407.9, -1644.95, 29.29, 241.89), --paleto PD
     },
     ["armory"] = {
-        [1] = vector3(462.23, -981.12, 30.68),
+        [1] = vector3(-449.53, 6015.15, 37.0),   ---paleto PD
+        [2] = vector3(364.73, -1604.06, 25.45), ---new
     },
     ["trash"] = {
-        [1] = vector3(439.0907, -976.746, 30.776),
+        [1] = vector3(362.74, -1598.84, 25.45),--new
     },
     ["fingerprint"] = {
-        [1] = vector3(460.9667, -989.180, 24.92),
+        [1] = vector3(380.29, -1602.59, 25.45),--new
+        [2] = vector3(474.81, -1015.07, 26.27),
     },
     ["evidence"] = {
-        [1] = vector3(442.1722, -996.067, 30.689),
-        [2] = vector3(451.7031, -973.232, 30.689),
-        [3] = vector3(455.1456, -985.462, 30.689),
+        [1] = vector3(381.54, -1607.28, 30.2),
+        [2] = vector3(381.3, -1609.14, 30.2),
+        [3] = vector3(379.6, -1610.05, 30.2),
+        [4] = vector3(385.4, 799.86, 190.49),--park
     },
     ["stations"] = {
-        [1] = {label = "Police Station", coords = vector4(428.23, -984.28, 29.76, 3.5)},
+        [1] = {label = "Police Station", coords = vector4(382.93, -1591.02, 29.28, 319.33)},
         [2] = {label = "Prison", coords = vector4(1845.903, 2585.873, 45.672, 272.249)},
         [3] = {label = "Police Station Paleto", coords = vector4(-451.55, 6014.25, 31.716, 223.81)},
+        [4] = {label = "Park Ranger Station", coords = vector4(382.21, 792.16, 187.71, 188.34)},
     },
 }
 
@@ -104,59 +110,482 @@ Config.SecurityCameras = {
 Config.AuthorizedVehicles = {
 	-- Grade 0
 	[0] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["psp_bmwgs"] ="Bike",
+        ["apolicec6"] ="Police Comet",
+        ["barricade"] ="Pollice Dominator",
+        ["barricade"] ="Police Dominator GTX",
+        ["apolicecoq"] ="Police Corvett",
+        ["policeb1"] ="Bike 1",
+        ["policeb2"] ="Bike 2",
 	},
-	-- Grade 1
-	[1] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
-
+    -- Grade 1
+    [1] = {
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["psp_bmwgs"] ="Bike",
+        ["apolicec6"] ="Police Comet",
+        ["barricade"] ="Pollice Dominator",
+        ["barricade"] ="Police Dominator GTX",
+        ["apolicecoq"] ="Police Corvett",
+        ["policeb1"] ="Bike 1",
+        ["policeb2"] ="Bike 2",
 	},
 	-- Grade 2
 	[2] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["psp_bmwgs"] ="Bike",
+        ["apolicec6"] ="Police Comet",
+        ["barricade"] ="Pollice Dominator",
+        ["barricade"] ="Police Dominator GTX",
+        ["apolicecoq"] ="Police Corvett",
+        ["policeb1"] ="Bike 1",
+        ["policeb2"] ="Bike 2",
 	},
 	-- Grade 3
 	[3] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["psp_bmwgs"] ="Bike",
+        ["apolicec6"] ="Police Comet",
+        ["barricade"] ="Pollice Dominator",
+        ["barricade"] ="Police Dominator GTX",
+        ["apolicecoq"] ="Police Corvett",
+        ["policeb1"] ="Bike 1",
+        ["policeb2"] ="Bike 2",
 	},
-	-- Grade 4
+    -- Grade 4
 	[4] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["psp_bmwgs"] ="Bike",
+        ["apolicec6"] ="Police Comet",
+        ["barricade"] ="Pollice Dominator",
+        ["barricade"] ="Police Dominator GTX",
+        ["apolicecoq"] ="Police Corvett",
+        ["policeb1"] ="Bike 1",
+        ["policeb2"] ="Bike 2",
+	},
+	-- Grade 5
+	[5] = {
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+        ["apoliceu2"] ="Detective Car 1",
+        ["apoliceu15"] ="Detective Car 2",
+        ["apoliceub"] ="Detective Car 3",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["psp_bmwgs"] ="Bike",
+        ["apolicec6"] ="Police Comet",
+        ["barricade"] ="Pollice Dominator",
+        ["barricade"] ="Police Dominator GTX",
+        ["apolicecoq"] ="Police Corvett",
+        ["policeb1"] ="Bike 1",
+        ["policeb2"] ="Bike 2",
+	},
+    -- Grade 6
+	[6] = {
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+        ["apoliceu2"] ="Detective Car 1",
+        ["apoliceu15"] ="Detective Car 2",
+        ["apoliceub"] ="Detective Car 3",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["psp_bmwgs"] ="Bike",
+        ["apolicec6"] ="Police Comet",
+        ["barricade"] ="Pollice Dominator",
+        ["barricade"] ="Police Dominator GTX",
+        ["apolicecoq"] ="Police Corvett",
+        ["policeb1"] ="Bike 1",
+        ["policeb2"] ="Bike 2",
+	},
+    -- Grade 7
+	[7] = {
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+        ["apoliceu2"] ="Detective Car 1",
+        ["apoliceu15"] ="Detective Car 2",
+        ["apoliceub"] ="Detective Car 3",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["psp_bmwgs"] ="Bike",
+        ["apolicec6"] ="Police Comet",
+        ["barricade"] ="Pollice Dominator",
+        ["barricade"] ="Police Dominator GTX",
+        ["apolicecoq"] ="Police Corvett",
+        ["policeb1"] ="Bike 1",
+        ["policeb2"] ="Bike 2",
+	},
+    -- Grade 8
+	[8] = {
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+        ["apoliceu2"] ="Detective Car 1",
+        ["apoliceu15"] ="Detective Car 2",
+        ["apoliceub"] ="Detective Car 3",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["psp_bmwgs"] ="Bike",
+        ["apolicec6"] ="Police Comet",
+        ["barricade"] ="Pollice Dominator",
+        ["barricade"] ="Police Dominator GTX",
+        ["apolicecoq"] ="Police Corvett",
+        ["policeb1"] ="Bike 1",
+        ["policeb2"] ="Bike 2",
+	},
+    -- Grade 9
+	[9] = {
+        ["iplspd14"] ="Vapid Torrence",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+        ["apoliceu2"] ="Detective Car 1",
+        ["apoliceu15"] ="Detective Car 2",
+        ["apoliceub"] ="Detective Car 3",
+        ["psp_bmwgs"] ="Bike",
+	},
+    -- Grade 10
+	[10] = {
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+        ["apoliceu2"] ="Detective Car 1",
+        ["apoliceu15"] ="Detective Car 2",
+        ["apoliceub"] ="Detective Car 3",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["psp_bmwgs"] ="Bike",
+        ["apolicec6"] ="Police Comet",
+        ["barricade"] ="Pollice Dominator",
+        ["barricade"] ="Police Dominator GTX",
+        ["apolicecoq"] ="Police Corvett",
+        ["policeb1"] ="Bike 1",
+        ["policeb2"] ="Bike 2",
+	},
+    -- Grade 11
+	[11] = {
+        ["iplspd14"] ="Vapid Torrence",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+        ["apoliceu2"] ="Detective Car 1",
+        ["apoliceu15"] ="Detective Car 2",
+        ["apoliceub"] ="Detective Car 3",
+        ["psp_bmwgs"] ="Bike",
+	},
+    -- Grade 12
+	[12] = {
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+        ["apoliceu2"] ="Detective Car 1",
+        ["apoliceu15"] ="Detective Car 2",
+        ["apoliceub"] ="Detective Car 3",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["psp_bmwgs"] ="Bike",
+        ["apolicec6"] ="Police Comet",
+        ["barricade"] ="Pollice Dominator",
+        ["barricade"] ="Police Dominator GTX",
+        ["apolicecoq"] ="Police Corvett",
+        ["policeb1"] ="Bike 1",
+        ["policeb2"] ="Bike 2",
+	},
+    -- Grade 13
+	[13] = {
+        ["iplspd14"] ="Vapid Torrence",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+        ["apoliceu2"] ="Detective Car 1",
+        ["apoliceu15"] ="Detective Car 2",
+        ["apoliceub"] ="Detective Car 3",
+        ["psp_bmwgs"] ="Bike",
+	},
+    -- Grade 14
+	[14] = {
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+        ["apoliceu2"] ="Detective Car 1",
+        ["apoliceu15"] ="Detective Car 2",
+        ["apoliceub"] ="Detective Car 3",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["psp_bmwgs"] ="Bike",
+        ["apolicec6"] ="Police Comet",
+        ["barricade"] ="Pollice Dominator",
+        ["barricade"] ="Police Dominator GTX",
+        ["apolicecoq"] ="Police Corvett",
+        ["policeb1"] ="Bike 1",
+        ["policeb2"] ="Bike 2",
+	},
+    -- Grade 15
+	[15] = {
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+        ["apoliceu2"] ="Detective Car 1",
+        ["apoliceu15"] ="Detective Car 2",
+        ["apoliceub"] ="Detective Car 3",
+		["mcraptor"] = "Raptor",
+        ["mach1rb"] = "Mustang",
+        ["psp_bmwgs"] ="Bike",
+        ["apolicec6"] ="Police Comet",
+        ["barricade"] ="Pollice Dominator",
+        ["barricade"] ="Police Dominator GTX",
+        ["apolicecoq"] ="Police Corvett",
+        ["policeb1"] ="Bike 1",
+        ["policeb2"] ="Bike 2",
+	},
+    -- Grade 16
+    [16] = { 
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd14"] ="Vapid Torrence",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+        ["apoliceu2"] ="Detective Car 1",
+        ["apoliceu15"] ="Detective Car 2",
+        ["apoliceub"] ="Detective Car 3",
+        ["psp_bmwgs"] ="Bike",
+        ["iplspd14"] ="Vapid Torrence",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+        ["apoliceu2"] ="Detective Car 1",
+        ["apoliceu15"] ="Detective Car 2",
+        ["apoliceub"] ="Detective Car 3",
+        ["psp_bmwgs"] ="Bike",
+	},
+    -- Grade 17
+    [17] = { 
+        ["pd1"] ="CrownVic",
+        ["Char"] ="Dodge Charger",
+        ["poldemonrb"] ="Dodge Charger 2",
+        ["zr1RB"] ="2019zr1rb",
+        ["Explorer"] ="2020 Explorer",
+        ["mach1rb"] ="Mustang",
+        ["iplspd14"] ="Vapid Torrence",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["iplspd3"] ="VBravado Buffalo",
+        ["apoliceu2"] ="Detective Car 1",
+        ["apoliceu15"] ="Detective Car 2",
+        ["apoliceub"] ="Detective Car 3",
+        ["psp_bmwgs"] ="Bike",
+        ["iplspd14"] ="Vapid Torrence",
+        ["iplspd13"] ="Vapid Stanier",
+        ["iplspd11"] ="Vapid Speedo",
+        ["iplspd10"] ="Vapid Scout",
+        ["psp_bmwgs"] ="Bike",
+	},
+
+    [18] = { 
+        ["ram1500"] = "Park Ram",
+        ["ranger2019"] = "Park suv2",
+        ["sheriff2"] = "Park Suv",
+        ["19Raptor"] = "Park raptor",
+	},
+
+    [19] = { 
+        ["ram1500"] = "Park Ram",
+        ["ranger2019"] = "Park suv2",
+        ["sheriff2"] = "Park Suv",
+        ["19Raptor"] = "Park raptor",
+	},
+
+    [20] = { 
+        ["ram1500"] = "Park Ram",
+        ["ranger2019"] = "Park suv2",
+        ["sheriff2"] = "Park Suv",
+        ["19Raptor"] = "Park raptor",
+	},
+
+    [21] = { 
+        ["ram1500"] = "Park Ram",
+        ["ranger2019"] = "Park suv2",
+        ["sheriff2"] = "Park Suv",
+        ["19Raptor"] = "Park raptor",
+	},
+
+    [22] = { 
+        ["ram1500"] = "Park Ram",
+        ["ranger2019"] = "Park suv2",
+        ["sheriff2"] = "Park Suv",
+        ["19Raptor"] = "Park raptor",
+	},
+
+    [23] = { 
+        ["ram1500"] = "Park Ram",
+        ["ranger2019"] = "Park suv2",
+        ["sheriff2"] = "Park Suv",
+        ["19Raptor"] = "Park raptor",
+	},
+
+    [24] = { 
+        ["ram1500"] = "Park Ram",
+        ["ranger2019"] = "Park suv2",
+        ["sheriff2"] = "Park Suv",
+        ["19Raptor"] = "Park raptor",
+	},
+
+    [25] = { 
+        ["ram1500"] = "Park Ram",
+        ["ranger2019"] = "Park suv2",
+        ["sheriff2"] = "Park Suv",
+        ["19Raptor"] = "Park raptor",
+	},
+
+    [26] = { 
+        ["ram1500"] = "Park Ram",
+        ["ranger2019"] = "Park suv2",
+        ["sheriff2"] = "Park Suv",
+        ["19Raptor"] = "Park raptor",
+	},
+
+    [27] = { 
+        ["ram1500"] = "Park Ram",
+        ["ranger2019"] = "Park suv2",
+        ["sheriff2"] = "Park Suv",
+        ["19Raptor"] = "Park raptor",
+	},
+
+    [28] = { 
+        ["ram1500"] = "Park Ram",
+        ["ranger2019"] = "Park suv2",
+        ["sheriff2"] = "Park Suv",
+        ["19Raptor"] = "Park raptor",
 	}
 }
 
@@ -187,10 +616,10 @@ Config.Radars = {
 
 Config.CarItems = {
     [1] = {
-        name = "heavyarmor",
-        amount = 2,
+        name = "weapon_flashlight",
+        amount = 1,
         info = {},
-        type = "item",
+        type = "weapon",
         slot = 1,
     },
     [2] = {
@@ -201,11 +630,18 @@ Config.CarItems = {
         slot = 2,
     },
     [3] = {
-        name = "police_stormram",
+        name = "parachute",
         amount = 1,
         info = {},
         type = "item",
         slot = 3,
+    },
+    [4] = {
+        name = "diving_gear",
+        amount = 1,
+        info = {},
+        type = "item",
+        slot = 4,
     },
 }
 
@@ -214,18 +650,15 @@ Config.Items = {
     slots = 30,
     items = {
         [1] = {
-            name = "weapon_pistol",
+            name = "weapon_pistol50",
             price = 0,
             amount = 1,
             info = {
                 serie = "",
-                attachments = {
-                    {component = "COMPONENT_AT_PI_FLSH", label = "Flashlight"},
-                }
             },
             type = "weapon",
             slot = 1,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [2] = {
             name = "weapon_stungun",
@@ -236,51 +669,42 @@ Config.Items = {
             },
             type = "weapon",
             slot = 2,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [3] = {
-            name = "weapon_pumpshotgun",
+            name = "weapon_specialcarbine",
             price = 0,
             amount = 1,
             info = {
                 serie = "",
-                attachments = {
-                    {component = "COMPONENT_AT_AR_FLSH", label = "Flashlight"},
-                }
             },
             type = "weapon",
             slot = 3,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [4] = {
-            name = "weapon_smg",
+            name = "weapon_assaultsmg",
             price = 0,
             amount = 1,
             info = {
                 serie = "",
-                attachments = {
-                    {component = "COMPONENT_AT_SCOPE_MACRO_02", label = "1x Scope"},
-                    {component = "COMPONENT_AT_AR_FLSH", label = "Flashlight"},
-                }
+                
             },
             type = "weapon",
             slot = 4,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [5] = {
-            name = "weapon_carbinerifle",
+            name = "weapon_advancedrifle",
             price = 0,
             amount = 1,
             info = {
                 serie = "",
-                attachments = {
-                    {component = "COMPONENT_AT_AR_FLSH", label = "Flashlight"},
-                    {component = "COMPONENT_AT_SCOPE_MEDIUM", label = "3x Scope"},
-                }
+                
             },
             type = "weapon",
             slot = 5,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [6] = {
             name = "weapon_nightstick",
@@ -289,7 +713,7 @@ Config.Items = {
             info = {},
             type = "weapon",
             slot = 6,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [7] = {
             name = "pistol_ammo",
@@ -298,7 +722,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 7,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [8] = {
             name = "smg_ammo",
@@ -307,7 +731,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 8,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [9] = {
             name = "shotgun_ammo",
@@ -316,7 +740,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 9,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [10] = {
             name = "rifle_ammo",
@@ -325,7 +749,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 10,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [11] = {
             name = "handcuffs",
@@ -334,7 +758,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 11,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [12] = {
             name = "weapon_flashlight",
@@ -343,7 +767,7 @@ Config.Items = {
             info = {},
             type = "weapon",
             slot = 12,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [13] = {
             name = "empty_evidence_bag",
@@ -352,16 +776,16 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 13,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [14] = {
-            name = "police_stormram",
+            name = "policetablet",
             price = 0,
-            amount = 50,
+            amount = 1,
             info = {},
             type = "item",
             slot = 14,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [15] = {
             name = "armor",
@@ -370,7 +794,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 15,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [16] = {
             name = "radio",
@@ -379,16 +803,52 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 16,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         },
         [17] = {
             name = "heavyarmor",
             price = 0,
-            amount = 50,
+            amount = 5,
             info = {},
             type = "item",
             slot = 17,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
+        },
+        [18] = {
+            name = "dslrcamera",
+            price = 0,
+            amount = 20,
+            info = {},
+            type = "item",
+            slot = 18,
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
+        },
+        [19] = {
+            name = "painkillers",
+            price = 0,
+            amount = 20,
+            info = {},
+            type = "item",
+            slot = 19,
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
+        },
+        [20] = {
+            name = "oxy",
+            price = 0,
+            amount = 5,
+            info = {},
+            type = "item",
+            slot = 20,
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
+        },
+        [21] = {
+            name = "bandage",
+            price = 0,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 21,
+            authorizedJobGrades = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
         }
     }
 }
